@@ -188,7 +188,7 @@ console.log(game)
 // Exercise 5
 let myArray = [pokemon[0], pokemon[1], pokemon[2]];
 for (let i=3; i<pokemon.length; i++){
-    for (let j=0; j<game.party.length; j++){
+    for (let j=0; j < myArray.length; j++){
         if(pokemon[i].hp>myArray[j].hp){
             myArray[j] = pokemon[i];
             break;
@@ -243,7 +243,7 @@ console.log(game.party);
 // Exercise 11
 game.catchPokemon = function(pokemonObj) {
     game.party.push(pokemonObj);
-    game.items[1].quantity--;
+    game.items[1].quantity =- 1;
 };
 game.catchPokemon(pokemon[5]);
 console.log(game.items);
