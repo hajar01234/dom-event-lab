@@ -65,7 +65,7 @@ calculator.addEventListener('click', (event) => {
   }
 
   if (event.target.innerText === 'C') {
-    display.innerText = '0';
+    display.innerText = '';
     firstNumber = '';
     operation = '';
     secondNumber = '';
